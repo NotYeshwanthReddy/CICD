@@ -18,7 +18,7 @@ class FileHandler:
             elif self.input_file.split(".")[-1] == "xlsx":
                 df = pd.read_excel(self.input_file)
             return df
-        except EXCEPTION as e:
+        except Exception as e:
             logging.error("Read error")
             logging.error(e)
             print(e)
@@ -30,7 +30,7 @@ class FileHandler:
             with open(self.output_file, "w") as outfile:
                 outfile.write("\n".join(predictions))
             return True
-        except EXCEPTION as e:
+        except Exception as e:
             logging.error("Writing error")
             logging.error(e)
             print(e)
