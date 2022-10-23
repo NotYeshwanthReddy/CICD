@@ -1,0 +1,20 @@
+log_file : "logs.txt"
+
+
+ID : "id"
+TARGET : "site_eui"
+
+SEED : 2022
+MODEL_MAX_DEPTH : 12
+MODEL_TASK_TYPE : 'CPU'
+MODEL_RL : 0.025
+MODEL_EVAL_METRIC : 'RMSE'
+MODEL_LOSS_FUNCTION : 'RMSE'
+MODEL_ESR : 10
+MODEL_VERBOSE : 1000
+MODEL_ITERATIONS : 280
+
+input_file : "src/main/resources/sample_data.csv"
+output_file : "src/main/resources/sample_output.txt"
+
+model_location : "src/main/model_file/model.pkl"

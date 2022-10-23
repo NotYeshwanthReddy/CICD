@@ -1,2 +1,4 @@
 *.pyc
-*/catboost_info/*
+catboost_info/*
+target/*
+__pycache__/*
